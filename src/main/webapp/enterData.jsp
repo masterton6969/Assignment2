@@ -23,11 +23,11 @@
 				<td><input type="text" name ="day"></td>
 			</tr>
 			<tr>
-				<td> Hour You Parked (e.g. 13 for 1:26pm, rounded down):</td>
+				<td> Hour You Parked (e.g. 13:43):</td>
 				<td><input type="text" name ="start_time"></td>
 			</tr>
 			<tr>
-				<td> End Time (e.g. 14 for 1:36pm, rounded up):</td>
+				<td> End Time (e.g. 23:22):</td>
 				<td><input type="text" name ="end_time"></td>
 			</tr>
 			<tr>

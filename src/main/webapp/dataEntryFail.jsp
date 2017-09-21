@@ -9,11 +9,11 @@
 <body>
 <h2>Data entry failed!</h2>
 <%
-	if (( session.getAttribute("car_rego") == null || session.getAttribute("park_address") == null || session.getAttribute("day") == null || session.getAttribute("start_time") == null || session.getAttribute("end_time") == null || session.getAttribute("is_handicapped") == null || session.getAttribute("handicapped_spot") == null || session.getAttribute("fees_paid") == null ))
+if (( session.getAttribute("car_rego") == null || session.getAttribute("park_address") == null || session.getAttribute("day") == null || session.getAttribute("start_time") == null || session.getAttribute("end_time") == null || session.getAttribute("is_handicapped") == null || session.getAttribute("handicapped_spot") == null || session.getAttribute("fees_paid") == null ))
 	{ %>
 		Data entry failed, one or more fields are incomplete!<br/><br/>
 	<%}
 %>
 <a href="enterData.jsp">Back to try again</a>
 </body>
-</html>
+</html>b

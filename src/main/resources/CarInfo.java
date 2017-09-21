@@ -27,6 +27,32 @@ public class CarInfo {
 		else this.handicappedSpot = false;
 		this.paidFee = myFee;
 	}
+	
+	public static void main(String args[]) {
+		System.out.println("ur gey");
+	}
+	
+	public static Boolean checkFeesPaid() {
+		if (getPaidFee() > getTimeDiff() * 1.5) {
+			return true;
+		} else {
+			return false;
+			this.parkedIllegally = true;
+		}
+	}
+	
+	public static Boolean checkTimeLimit() {
+		if ((getStartTime() < 900 || getEndTime() > 1700) && (getDay() != "Saturday" || getDay() != "Sunday")) {
+			this.parkedIllegally = true;
+		}
+	}
+	
+	public static long getTimeDiff() {
+		long diff = endTime.getTime() - startTime.getTime();
+		long diffMinutes = diff / (60 * 1000);         
+		long diffHours = diff / (60 * 60 * 1000); 
+		return diffHours;
+	}
 
 	public static String getCarNumber() {
 		return carNumber;
